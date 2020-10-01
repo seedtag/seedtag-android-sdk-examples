@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SampleApp</string>
+    <string name="seedtagtest">SeedtagTest</string>
+    <string name="display_ad">DISPLAY AD</string>
+    <string name="lorem_impsum_large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae gravida sem, ut vehicula diam. In vehicula vulputate lorem. Nulla lacinia neque magna, vitae venenatis ante hendrerit ut. Nunc fringilla, massa nec luctus faucibus, ipsum ligula placerat nulla, ut maximus risus odio non sem. Nunc quis nibh nec lacus auctor consequat ut id justo. Proin eget bibendum metus. Vestibulum sodales vitae ipsum sed pretium. Proin eleifend mauris felis, vel molestie neque feugiat ac. Duis vel sapien eget ipsum bibendum porta. Quisque sed congue quam, ac pretium neque. Aenean ac egestas lacus. Proin porttitor fermentum condimentum.
+
+Vestibulum aliquam sit amet lacus in consectetur. Mauris feugiat libero eu eros pharetra convallis. Vivamus gravida fermentum neque, id euismod augue scelerisque in. Maecenas lacinia vehicula lacus. Nam et lacinia turpis. Vivamus lobortis facilisis elit eget convallis. Donec mollis urna sit amet felis suscipit, ac lobortis turpis dapibus. Ut hendrerit interdum odio, id consectetur erat luctus vel.
+
+Morbi nec dolor sit amet neque venenatis congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi lobortis condimentum urna ultrices ullamcorper. Phasellus pretium mauris vel arcu auctor imperdiet. Etiam lectus turpis, blandit sit amet lectus et, varius rhoncus orci. Vivamus suscipit dui vitae mi vehicula eleifend a ac lectus. Donec nec mi sit amet nisi ullamcorper interdum. In dolor ex, mattis ac euismod vel, tempus a quam. Cras et accumsan odio. Donec a blandit eros. Curabitur eget molestie dolor. Donec ut fringilla urna. Integer ultrices purus at mi sollicitudin euismod.
+
+Aliquam mollis faucibus sem, ac iaculis metus rhoncus eleifend. Nullam quis pretium dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum sed lacus viverra, suscipit risus varius, porttitor turpis. Integer dapibus ante vitae lectus condimentum condimentum id eu tortor. Ut non nibh vehicula arcu cursus tincidunt. Duis sollicitudin ultrices dolor, quis tristique diam imperdiet nec. Maecenas scelerisque elit et nulla pretium ullamcorper. Nam pulvinar, purus ut malesuada lacinia, lectus ligula ultrices dolor, at mattis erat sem congue ligula. Phasellus nec vehicula orci, ut pulvinar lorem. Nulla ultrices, ipsum ac finibus vehicula, ante enim laoreet ipsum, ut auctor est orci vitae augue. Donec eget blandit ante. Ut accumsan lectus vitae elit laoreet elementum. In sollicitudin porttitor nisl, sit amet placerat ante condimentum in.
+
+Phasellus tincidunt libero nec metus fringilla, ac efficitur nisl tristique. Phasellus viverra congue eleifend. Praesent nec ex fringilla, sodales metus eget, vehicula justo. Etiam a lobortis ipsum, eget mollis tortor. Nulla sit amet laoreet ligula. In suscipit sem vitae maximus vestibulum. Donec metus massa, finibus porta ultrices vel, finibus vel metus. Phasellus mi libero, interdum vel venenatis eu, viverra nec nulla. Duis convallis velit vel pulvinar aliquet. Nulla eros mauris, vestibulum ut tortor at, euismod posuere justo. Proin id commodo erat, sed consequat nisl. Duis vulputate ut lectus eget tincidunt. Integer placerat sollicitudin purus a sollicitudin. Suspendisse eu massa at metus tempor commodo. Sed posuere, magna vitae ullamcorper facilisis, eros dui efficitur lectus, nec tincidunt neque metus vel augue.</string>
+    <string name="image">image</string>
+    <string name="back_sign">Back</string>
+    <string name="seedtag_sample_app">Seedtag Sample App</string>
+    <string name="picasso_display">PICASSO DISPLAY</string>
+    <string name="volley_display">VOLLEY DISPLAY</string>
+    <string name="glide_display">GLIDE DISPLAY</string>
+    <string name="static_image_display">STATIC IMAGE DISPLAY</string>
+    <string name="picasso_display_sample">Picasso Display Sample</string>
+    <string name="volley_display_sample">Volley Display Sample</string>
+    <string name="static_display_sample">Static Display Sample</string>
+    <string name="glide_display_sample">Glide Display Sample</string>
+</resources>
