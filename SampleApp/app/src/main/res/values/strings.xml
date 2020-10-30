@@ -22,4 +22,6 @@ Phasellus tincidunt libero nec metus fringilla, ac efficitur nisl tristique. Pha
     <string name="volley_display_sample">Volley Display Sample</string>
     <string name="static_display_sample">Static Display Sample</string>
     <string name="glide_display_sample">Glide Display Sample</string>
+    <string name="inscreen_sample">Inscreen Sample</string>
+    <string name="inscreen">INSCREEN</string>
 </resources>
