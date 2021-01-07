@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         SeedtagAdsManager.initSeedtagAds(
             baseContext,
             "advertisingIdSample",
+            false,
             "IabConsentStringSample",
             "seedtagTokenSample")
         SeedtagAdsManager.enableTestMode()
