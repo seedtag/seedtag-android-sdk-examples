@@ -20,6 +20,7 @@ import com.seedtag.sampleapp.ui_main.MainFragment
 import com.seedtag.sampleapp.ui_main.MainViewModel
 import com.seedtag.seedtagads.api.SeedtagAdsLayout
 import com.seedtag.seedtagads.api.SeedtagAdsManager
+import com.seedtag.seedtagads.internal.models.SeedtagAdsContext
 
 
 class VolleyDisplayAdFragment : Fragment() {
@@ -82,6 +83,14 @@ class VolleyDisplayAdFragment : Fragment() {
 
         val adUnit: SeedtagAdsLayout = view?.findViewById(R.id.isl_display_ad)!!
         SeedtagAdsManager.createNewPageView()
+            .setSeedtagAdsContext(
+                SeedtagAdsContext(
+                requireContext(),
+                "d2391f22-fc60-4160-9f33-894f0343decf",
+                false,
+                "N/A",
+                "5f8973d1b7f86d0600aa2196"
+            ))
             .registerReferenceUrl("https://referenceurl.com/article")
             .registerAdunit(adUnit)
             .requestAds()

@@ -20,11 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
 
         SeedtagAdsManager.initSeedtagAds(
-            baseContext,
-            "advertisingIdSample",
-            false,
-            "IabConsentStringSample",
-            "seedtagTokenSample")
+            baseContext)
         SeedtagAdsManager.enableTestMode()
 
     }
