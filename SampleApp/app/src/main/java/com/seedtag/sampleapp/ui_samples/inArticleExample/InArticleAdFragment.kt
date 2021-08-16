@@ -1,39 +1,41 @@
-package com.seedtag.sampleapp.ui_samples.picassoDisplay
+package com.seedtag.sampleapp.ui_samples.inArticleExample
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import com.seedtag.sampleapp.R
 import com.seedtag.sampleapp.ui_main.MainFragment
 import com.seedtag.sampleapp.ui_main.MainViewModel
+import com.seedtag.sampleapp.ui_samples.picassoDisplay.PicassoDisplayAdFragment
 import com.seedtag.seedtagads.api.SeedtagAdsLayout
 import com.seedtag.seedtagads.api.SeedtagAdsManager
 import com.seedtag.seedtagads.internal.models.SeedtagAdsContext
 import com.squareup.picasso.Picasso
 
-class PicassoDisplayAdFragment : Fragment() {
+class InArticleAdFragment : Fragment() {
 
     companion object {
         fun newInstance() =
-            PicassoDisplayAdFragment()
+            InArticleAdFragment()
     }
 
     private lateinit var viewModel: MainViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
-        val root = inflater.inflate(R.layout.dynamic_display_ad_article_fragment, container, false)
+        val root = inflater.inflate(R.layout.inarticle_example_fragment, container, false)
 
         val btnBack : Button = root.findViewById(R.id.btn_back)
         btnBack.setOnClickListener {
             val transaction = activity?.supportFragmentManager?.beginTransaction()
-            transaction?.replace(R.id.container,
+            transaction?.replace(
+                R.id.container,
                 MainFragment()
             )
             transaction?.disallowAddToBackStack()
@@ -61,16 +63,23 @@ class PicassoDisplayAdFragment : Fragment() {
     private fun initAd(){
 
         val adUnit: SeedtagAdsLayout = view?.findViewById(R.id.isl_display_ad)!!
+
+        val inArticleAdUnit: SeedtagAdsLayout = view?.findViewById(R.id.isl_inarticle)!!
+        inArticleAdUnit.setInArticleAdunit()
+
         SeedtagAdsManager.createNewPageView()
-            .setSeedtagAdsContext(SeedtagAdsContext(
+            .setSeedtagAdsContext(
+                SeedtagAdsContext(
                 requireContext(),
                 "d2391f22-fc60-4160-9f33-894f0343decf",
                 false,
                 null,
                 "5f8973d1b7f86d0600aa2196"
-            ))
+            )
+            )
             .registerReferenceUrl("https://referenceurl.com/article")
             .registerAdunit(adUnit)
+            .registerAdunit(inArticleAdUnit)
             .requestAds()
 
     }

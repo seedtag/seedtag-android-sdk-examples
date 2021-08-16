@@ -22,4 +22,11 @@ Phasellus tincidunt libero nec metus fringilla, ac efficitur nisl tristique. Pha
     <string name="volley_display_sample">Volley Display Sample</string>
     <string name="static_display_sample">Static Display Sample</string>
     <string name="glide_display_sample">Glide Display Sample</string>
+    <string name="inscreen_example">INSCREEN EXAMPLE</string>
+    <string name="lorem_ipsum_short">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae gravida sem, ut vehicula diam. In vehicula vulputate lorem. Nulla lacinia neque magna, vitae venenatis ante hendrerit ut. Nunc fringilla, massa nec luctus faucibus, ipsum ligula placerat nulla, ut maximus risus odio non sem. Nunc quis nibh nec lacus auctor consequat ut id justo. Proin eget bibendum metus. Vestibulum sodales vitae ipsum sed pretium. Proin eleifend mauris felis, vel molestie neque feugiat ac. Duis vel sapien eget ipsum bibendum porta. Quisque sed congue quam, ac pretium neque. Aenean ac egestas lacus. Proin porttitor fermentum condimentum.
+
+Vestibulum aliquam sit amet lacus in consectetur. Mauris feugiat libero eu eros pharetra convallis. Vivamus gravida fermentum neque, id euismod augue scelerisque in. Maecenas lacinia vehicula lacus. Nam et lacinia turpis. Vivamus lobortis facilisis elit eget convallis. Donec mollis urna sit amet felis suscipit, ac lobortis turpis dapibus. Ut hendrerit interdum odio, id consectetur erat luctus vel.
+
+Morbi nec dolor sit amet neque venenatis congue.</string>
+    <string name="inarticle_example">INARTICLE EXAMPLE</string>
 </resources>

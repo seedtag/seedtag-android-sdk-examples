@@ -1,14 +1,14 @@
-package com.seedtag.sampleapp.ui_samples.picassoDisplay
+package com.seedtag.sampleapp.ui_samples.inScreenExample
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import com.seedtag.sampleapp.R
 import com.seedtag.sampleapp.ui_main.MainFragment
 import com.seedtag.sampleapp.ui_main.MainViewModel
@@ -17,23 +17,26 @@ import com.seedtag.seedtagads.api.SeedtagAdsManager
 import com.seedtag.seedtagads.internal.models.SeedtagAdsContext
 import com.squareup.picasso.Picasso
 
-class PicassoDisplayAdFragment : Fragment() {
+class InScreenAdFragment : Fragment() {
+
+    private var inscreenadUnit: SeedtagAdsLayout? = null
 
     companion object {
         fun newInstance() =
-            PicassoDisplayAdFragment()
+            InScreenAdFragment()
     }
 
     private lateinit var viewModel: MainViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
-        val root = inflater.inflate(R.layout.dynamic_display_ad_article_fragment, container, false)
+        val root = inflater.inflate(R.layout.inscreen_example_fragment, container, false)
 
         val btnBack : Button = root.findViewById(R.id.btn_back)
         btnBack.setOnClickListener {
             val transaction = activity?.supportFragmentManager?.beginTransaction()
-            transaction?.replace(R.id.container,
+            transaction?.replace(
+                R.id.container,
                 MainFragment()
             )
             transaction?.disallowAddToBackStack()
@@ -44,6 +47,9 @@ class PicassoDisplayAdFragment : Fragment() {
 
         val url = "https://lucasfh1976.files.wordpress.com/2016/01/mujerquellora.jpg?w=625"
         Picasso.get().load(url).into(root.findViewById(R.id.iv_display_ad) as ImageView)
+
+        inscreenadUnit = root.findViewById(R.id.isl_inscreen)
+        inscreenadUnit!!.setInscreenAdunit()
 
         return root
     }
@@ -62,15 +68,18 @@ class PicassoDisplayAdFragment : Fragment() {
 
         val adUnit: SeedtagAdsLayout = view?.findViewById(R.id.isl_display_ad)!!
         SeedtagAdsManager.createNewPageView()
-            .setSeedtagAdsContext(SeedtagAdsContext(
+            .setSeedtagAdsContext(
+                SeedtagAdsContext(
                 requireContext(),
                 "d2391f22-fc60-4160-9f33-894f0343decf",
                 false,
                 null,
                 "5f8973d1b7f86d0600aa2196"
-            ))
+            )
+            )
             .registerReferenceUrl("https://referenceurl.com/article")
             .registerAdunit(adUnit)
+            .registerAdunit(inscreenadUnit!!, false)
             .requestAds()
 
     }

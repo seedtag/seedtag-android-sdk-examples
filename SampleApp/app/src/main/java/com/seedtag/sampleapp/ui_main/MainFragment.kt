@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import com.seedtag.sampleapp.R
 import com.seedtag.sampleapp.ui_samples.glideDisplay.GlideDisplayAdFragment
+import com.seedtag.sampleapp.ui_samples.inArticleExample.InArticleAdFragment
+import com.seedtag.sampleapp.ui_samples.inScreenExample.InScreenAdFragment
 import com.seedtag.sampleapp.ui_samples.volleyDisplay.VolleyDisplayAdFragment
 import com.seedtag.sampleapp.ui_samples.picassoDisplay.PicassoDisplayAdFragment
 import com.seedtag.sampleapp.ui_samples.staticDisplay.StaticDisplayAdFragment
@@ -43,6 +45,16 @@ class MainFragment : Fragment() {
         val btnVolleyDisplayAd : Button = root.findViewById(R.id.btn_volley_display_ad)
         btnVolleyDisplayAd.setOnClickListener {
             goToFragment(VolleyDisplayAdFragment())
+        }
+
+        val btnInScreenAExample : Button = root.findViewById(R.id.btn_inscreen_example)
+        btnInScreenAExample.setOnClickListener {
+            goToFragment(InScreenAdFragment())
+        }
+
+        val btnInArticleExample : Button = root.findViewById(R.id.btn_inarticle_example)
+        btnInArticleExample.setOnClickListener {
+            goToFragment(InArticleAdFragment())
         }
 
         return root

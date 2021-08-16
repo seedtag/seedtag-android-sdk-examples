@@ -1,74 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui_main.MainFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/message"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/seedtag_sample_app"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="30dp"
-        android:textSize="24sp"/>
+        tools:context=".ui_main.MainFragment">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_picasso_display_ad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/message"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="50dp"
-        android:text="@string/picasso_display"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@color/white"
-        tools:targetApi="lollipop" />
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seedtag_sample_app"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_glide_display_ad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/btn_picasso_display_ad"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="50dp"
-        android:text="@string/glide_display"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@color/white"
-        tools:targetApi="lollipop" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_picasso_display_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/message"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="50dp"
+            android:text="@string/picasso_display"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            tools:targetApi="lollipop" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_static_display_ad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/btn_glide_display_ad"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="50dp"
-        android:text="@string/static_image_display"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@color/white"
-        tools:targetApi="lollipop" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_glide_display_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn_picasso_display_ad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/glide_display"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            tools:targetApi="lollipop" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_volley_display_ad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/btn_static_display_ad"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="50dp"
-        android:text="@string/volley_display"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@color/white"
-        tools:targetApi="lollipop" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_static_display_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn_glide_display_ad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/static_image_display"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            tools:targetApi="lollipop" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_volley_display_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn_static_display_ad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/volley_display"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            tools:targetApi="lollipop" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_inscreen_example"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn_volley_display_ad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/inscreen_example"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            tools:targetApi="lollipop" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_inarticle_example"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btn_inscreen_example"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/inarticle_example"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            tools:targetApi="lollipop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
